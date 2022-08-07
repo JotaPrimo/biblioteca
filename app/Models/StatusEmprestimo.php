@@ -9,6 +9,9 @@ class StatusEmprestimo extends Model
 {
     use HasFactory;
 
+    const ATIVO     = 1;
+    const ATRASADO  = 2;
+
     protected $fillable = [
        'descricao'
     ];
