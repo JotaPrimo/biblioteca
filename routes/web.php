@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\AutorController;
 use Illuminate\Support\Facades\Route;
+use App\Models\Autor;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +20,9 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+
+Route::resource('autores', AutorController::class);
+
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

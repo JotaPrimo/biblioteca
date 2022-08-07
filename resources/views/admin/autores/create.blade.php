@@ -5,16 +5,25 @@
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">{{ __('Autores') }}</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                    <form>
+                        <div class="row">
+                          <div class="col">
+                            <input type="text" class="form-control" placeholder="Nome">
+                          </div>
+                          <div class="col">
+                            <input type="text" class="form-control"  placeholder="Descrição">
+                          </div>
+                        </div> 
+                        
+                        <br>
+                        
+                        <button type="submit" class="btn btn-success">Enviar</button>
 
-                    {{ __('You are logged in!') }}
+                          
+                      </form>
                 </div>
             </div>
         </div>
